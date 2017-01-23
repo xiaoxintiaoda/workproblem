@@ -118,3 +118,9 @@ $book2= Factory::makeBook();
 $book2->setDatabase($database2);
 ```
 **依赖注入真的是更易维护，更易测试和更加模块化的最佳解决方案。**
+
+##其他文章
+
+[依赖注入（DI）在PHP中的实现](http://www.jianshu.com/p/cb0693dd8d2e)
+
+[PHP程序员如何理解依赖注入容器(dependency injection container)](https://segmentfault.com/a/1190000002424023)
