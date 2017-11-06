@@ -1,0 +1,5 @@
+    php连接 redis和memcached的连接选项中都有一个pconnect的选项，代表是否要使用长连接，一般为了提高性能，我都是设置为true。
+    有一次更新redis和配置时，却发现新更新的redis配置并没有生效，php进程连接的还是以前的连接，后来发现由于使用的长连接，所以
+    “The connection will not be closed on close or end of request until the php process ends. ”必须重启php-fpm新的连接配置才会生效。
+    
+    文章:http://blog.csdn.net/qmhball/article/details/46988111 对此有详解，memcached也是一样。
